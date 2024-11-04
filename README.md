@@ -50,3 +50,28 @@ here selector is its unique identifier
 properties are attributes
 
 for this either use {{}} or [property_name]="variable_name" 
+
+
+<h2>event binding</h2>
+(event_name)="function_name()"
+
+<h2>two way binding</h2>
+using ngModel
+
+![image](https://github.com/user-attachments/assets/34bb85ad-42ca-4c77-9960-23fb2867a04e)
+
+using then the variable courseName will change as the data is typed in input box
+
+<p>[(ngModel)]="variable_name"</p>
+
+<h2>signal</h2>
+
+varibale_name=signal(data);
+
+<p>to access this {{variable_name()}}</p> 
+called like methods
+
+
+<p>to change the value of a signal</p>
+
+this.singal_variable_name.set(data)
