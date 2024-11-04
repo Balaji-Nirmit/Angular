@@ -37,3 +37,16 @@ or
 here selector is its unique identifier
 <p>standalone is true????</p>
 <p>initially app.module.ts is there where all components were given which takes a lot time as it first loads all components first but since now they are standalone each component is loaded when triggered</p>
+
+
+<h1>data binding</h1>
+
+![image](https://github.com/user-attachments/assets/e04a5815-151e-4ce4-b9c7-d73ca22abaeb)
+
+
+{{}} it is called interpolation which sets variable value in html 
+
+<h2>property binding</h2>
+properties are attributes
+
+for this either use {{}} or [property_name]="variable_name" 
