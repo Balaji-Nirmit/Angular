@@ -194,3 +194,29 @@ Protect the routes from unauthorized users using Route Guards</p>
 ![image](https://github.com/user-attachments/assets/1e493d18-36ad-4e23-8b11-98d2817fecc6)
 
 ![image](https://github.com/user-attachments/assets/4c2f12ba-d2cc-4738-82d6-f0c182a536ae)
+
+<h1>Control flow statements</h1>
+@if, @if @elseif @else
+
+![image](https://github.com/user-attachments/assets/1ffda969-6a43-460a-a04d-244c4a526d78)
+
+![image](https://github.com/user-attachments/assets/35ec653b-b6f9-4434-a045-9b9e3f7b02fe)
+
+![image](https://github.com/user-attachments/assets/fff174fe-d09c-496c-a3f3-176d9dff3f23)
+
+@for
+
+![image](https://github.com/user-attachments/assets/dc012548-e368-444e-83fa-8136e4f32539)
+
+for structural dirctives we have to import common Module but when we use control flow statements then we don't have to import common module
+
+<h1>pipe</h1>
+<p>Angular Pipes takes data as input and formats or transform the data to display in the template. We use them to change the appearance of the data before presenting it to the user. The most common use case of pipes is displaying the dates in the correct format as per the user’s locale.</p>
+
+<p>built-in pipes like currency pipe, date pipe, number pipe, percent pipe, decimal pipe, & slice pipe etc.</p>
+
+![image](https://github.com/user-attachments/assets/755a031d-fe49-4782-a452-17e5ce37a8d4)
+
+![image](https://github.com/user-attachments/assets/4cb79fd7-c6ba-4fef-bf2c-f26386e0fa25)
+
+<p>for custom pipes view the official docs  <button><a href="https://angular.dev/api?type=pipe" target="_blank">click here</a></button></p>
