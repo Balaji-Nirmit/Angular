@@ -75,3 +75,49 @@ called like methods
 <p>to change the value of a signal</p>
 
 this.singal_variable_name.set(data)
+
+<h1>directive</h1>
+<p>The Angular directive helps us to manipulate the DOM. You can change a DOM element’s appearance, behavior, or layout using the directives. They help you to extend HTML. The Angular directives are classified into three categories based on how they behave. </p> 
+<ul><li>Component directive</li>
+<li>Structural drective</li>
+<li>Attribute Directive</li></ul>
+
+<h2>Structural directive</h2>
+
+<p>Structural directives can change the DOM layout by adding and removing DOM elements. All structural Directives are preceded by Asterix symbol</p>
+<p>in angular 18 since stnadalone concept is there so to use any directive we have to import commonModule</p>
+
+<h3>ngIf</h3>
+
+![image](https://github.com/user-attachments/assets/22b75bba-7545-407e-913c-48abd558f9f5)
+
+![image](https://github.com/user-attachments/assets/d4996a37-77a4-45c4-a811-2baf44d7d375)
+
+![image](https://github.com/user-attachments/assets/51b99c37-aa89-4f3f-90d7-7b16755c9720)
+
+<h3>ngIf else</h3>
+
+![image](https://github.com/user-attachments/assets/121c67ce-4173-4327-95d4-fd012af5235e)
+
+<h3>nfIf then else</h3>
+
+![image](https://github.com/user-attachments/assets/71d3dc29-a584-481c-b8f9-a192d49e420e)
+
+<p>Here, we have then clause followed by a template named thenBlock.
+When the condition is true, the template thenBlock is rendered. If false, then the template elseBlock is rendered</p>
+
+<h3>ngFor</h3>
+
+![image](https://github.com/user-attachments/assets/ad31062e-24ac-4abe-bdd4-ad6b92fed1b5)
+
+<h4>trackBy</h4>
+<p>Angular uses the object identity to compare the elements in the collection to the DOM nodes. Hence when you add an item or remove an item, the Angular will track it and update only the modified items in the DOM. It does not render the entire list.
+
+But this fails if we update the list from the backend server. That is because the retrieved objects cannot be compared with the existing objects in the list as the reference has changed. The Angular simply removes these elements from DOM and recreates the new elements from the new data. This has a huge performance implication.
+
+Angular trackBy clause eliminates this problem, by telling angular how to identify similar elements. The Angular will use the value returned by the trackBy function to match the elements returned by the database and update the DOM Elements without recreating them.
+
+We should always specify the primary key or unique key as the trackBy clause.</p>
+
+![image](https://github.com/user-attachments/assets/5d64a783-5b0e-4eaf-afad-1b486cd60080)
+
