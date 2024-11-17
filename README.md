@@ -121,3 +121,25 @@ We should always specify the primary key or unique key as the trackBy clause.</p
 
 ![image](https://github.com/user-attachments/assets/5d64a783-5b0e-4eaf-afad-1b486cd60080)
 
+<h2>Attribute directive</h2>
+<p>An Attribute or style directive can change the appearance or behavior of an element.</p>
+<h4>NgModel</h4>
+<p>The ngModel directive is used the achieve the two-way data binding. We have covered ngModel directive in Data Binding in Angular Tutorial</p>
+<h4>ngClass</h4>
+<p>The ngClass is a directive that Angular uses to dynamically add or remove CSS classes to an HTML element based on certain conditions.</p>
+
+![image](https://github.com/user-attachments/assets/aca31e1e-76d6-46ae-a290-7992795131ac)
+
+<h5>NgClass with Array</h5>
+<p>If the ngClass expression returns an array, Angular treats each array element as a CSS class.
+
+The syntax is as follows.</p>
+
+![image](https://github.com/user-attachments/assets/fcd156ce-be47-4c4a-8826-a164f1ef2105)
+
+<h5>NgClass with Object</h5>
+<p>You can also bind the ngClass to an object. The properties (keys) of the object will act as a class name. The properties must return a boolean value. If the return value is true, the class is applied. Else not.</p>
+
+![image](https://github.com/user-attachments/assets/a38faea3-49c7-482f-95d2-f02f96dbbc91)
+
+<h3>ngStyle</h3>
