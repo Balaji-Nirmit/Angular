@@ -150,3 +150,42 @@ The syntax is as follows.</p>
 
 ![image](https://github.com/user-attachments/assets/59f5c5bf-c696-44d8-8636-dcafb8dc5233)
 
+
+<h1>routing</h1>
+
+app.routes.ts file is where routes are added
+<p>Routing allows you to move from one part of the application to another part or one View to another View.
+
+In Angular, Routing is handled by the Angular Router Module.</p>
+
+<h6>angular router</h6>
+<p>The Router is a separate module in Angular. It is in its own library package, @angular/router. The Angular Router provides the necessary service providers and directives for navigating through application views.
+
+Using Angular Router you can
+
+Navigate to a specific view by typing a URL in the address bar,
+Pass optional parameters (query parameters) to the View,
+Bind the clickable elements to the View and load the view when the user performs application tasks,
+Handles back and forward buttons of the browser,
+Allows you to load the view dynamically,
+Protect the routes from unauthorized users using Route Guards</p>
+
+![image](https://github.com/user-attachments/assets/b9922a52-a854-4e8b-8940-18f5f7bb051a)
+
+<h3>components of angular router</h3>
+<ul>
+  <li><h4>Router</h4><p>An Angular Router is a service (Angular Router API) that enables navigation from one component to the next component as users perform application tasks like clicking on menus links, and buttons, or clicking on the back/forward button on the browser. We can access the router object and use its methods like navigate() or navigateByUrl(), to navigate to a route</p></li>
+  
+  <li><h4>Route</h4><p>Route tells the Angular Router which view to display when a user clicks a link or pastes a URL into the browser address bar. Every Route consists of a path and a component it is mapped to. The Router object parses and builds the final URL using the Route</p></li>
+  <li><h4>Routes</h4><p>Routes is an array of Route objects our application supports</p></li>
+  <li><h4>RouterOutlet</h4><p>The outerOutlet is a directive (<router-outlet>) that serves as a placeholder, where the Router should display the view</p></li>
+  <li><h4>RouterLink</h4><p>The RouterLink is a directive that binds the HTML element to a Route. Clicking on the HTML element, which is bound to a RouterLink, will result in navigation to the Route. The RouterLink may contain parameters to be passed to the route’s component.</p></li>
+  <li><h4>RouterLinkActive</h4><p>RouterLinkActive is a directive for adding or removing classes from an HTML element that is bound to a RouterLink. Using this directive, we can toggle CSS classes for active RouterLinks based on the current RouterState</p></li>
+  <li><h4>ActivatedRoute</h4><p>The ActivatedRoute is an object that represents the currently activated route associated with the loaded Component.</p></li>
+  <li><h4>RouterState</h4><p>The current state of the router includes a tree of the currently activated routes together with convenience methods for traversing the route tree.</p></li>
+  <li><h4>RouterLink Parameters array</h4><p>The Parameters or arguments to the Route. It is an array that you can bind to RouterLink directive or pass it as an argument to the Router.navigate method.</p></li>
+</ul>
+
+![image](https://github.com/user-attachments/assets/46b23faa-706c-4895-9d68-04a9880666f5)
+
+![image](https://github.com/user-attachments/assets/55876135-c33f-4f75-a3b6-05b3f39592e1)
