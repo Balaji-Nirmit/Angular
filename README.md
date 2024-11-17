@@ -143,3 +143,10 @@ The syntax is as follows.</p>
 ![image](https://github.com/user-attachments/assets/a38faea3-49c7-482f-95d2-f02f96dbbc91)
 
 <h3>ngStyle</h3>
+
+![image](https://github.com/user-attachments/assets/2f5dd0fa-dcf2-4a1b-8a13-0d39642e28e1)
+
+![image](https://github.com/user-attachments/assets/98d7a039-5602-450a-9812-926b8d76c2d1)
+
+![image](https://github.com/user-attachments/assets/59f5c5bf-c696-44d8-8636-dcafb8dc5233)
+
