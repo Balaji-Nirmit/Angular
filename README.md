@@ -219,4 +219,13 @@ for structural dirctives we have to import common Module but when we use control
 
 ![image](https://github.com/user-attachments/assets/4cb79fd7-c6ba-4fef-bf2c-f26386e0fa25)
 
-<p>for custom pipes view the official docs  <button><a href="https://angular.dev/api?type=pipe" target="_blank">click here</a></button></p>
+<p>for custom pipes view the official docs  <a href="https://angular.dev/api?type=pipe" target="_blank">click here</a></p>
+
+to print objects on the dom use json pipe other wise [objects objects] this will be printed.
+
+<h4>custom pipes</h4>
+ng g p pipename  or ng generate pipe pipename
+
+<p>pipes has transform function</p>
+
+![image](https://github.com/user-attachments/assets/ca31266c-e0ee-4611-a7bf-14f361506785)
