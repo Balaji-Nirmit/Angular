@@ -274,3 +274,31 @@ When we include FormsModule, the Angular is going to look out for any <form> tag
 ![image](https://github.com/user-attachments/assets/14b67996-7ddb-432b-bc79-a9ed50794c7d)
 
 ![image](https://github.com/user-attachments/assets/5954687d-b3f9-4a8b-8796-87bd23cd9d7b)
+
+<h2>reactive from</h2>
+<p>Reactive forms ( also known as Model-driven forms) are one of the two ways to build Angular forms. In this tutorial, we will learn how to build a simple Example Reactive Form. To build reactive forms, first, we need to import ReactiveFormsModule. We then create the Form Model in component class using Form Group, Form Control & FormArrays. Next, we will create the HTML form template and bind it to the Form Model.</p>
+<p>Reactive forms are forms where we define the structure of the form in the component class. i.e. we create the form model with Form Groups, Form Controls, and FormArrays. We also define the validation rules in the component class. Then, we bind it to the HTML form in the template. This is different from the template-driven forms, where we define the logic and controls in the HTML template.</p>
+
+![image](https://github.com/user-attachments/assets/a6154153-5b12-405f-864e-fdff1d7e4bcc)
+
+![image](https://github.com/user-attachments/assets/5237062f-099c-453c-be97-327bcf73fafd)
+
+![image](https://github.com/user-attachments/assets/2817f954-2089-4d41-858c-bf30491cfdd0)
+
+![image](https://github.com/user-attachments/assets/104b64fa-c0d7-44fb-89eb-c49e3d74c1ae)
+
+![image](https://github.com/user-attachments/assets/4ca38ff2-089b-461a-98da-6e64299cb9e0)
+
+![image](https://github.com/user-attachments/assets/67ac9e0a-186e-4337-b9ea-6b276bcb65b2)
+
+![image](https://github.com/user-attachments/assets/4910280d-a31b-4170-acea-f3a8546c1e02)
+
+![image](https://github.com/user-attachments/assets/1766ec9d-1c3b-410c-92f6-d6f2a6896781)
+
+![image](https://github.com/user-attachments/assets/a017ad3e-70ca-4e91-b41a-aef2d5f3eed6)
+
+![image](https://github.com/user-attachments/assets/bb659672-b0b5-40f5-967c-c9787a7c73fa)
+
+![image](https://github.com/user-attachments/assets/6922dafb-88eb-4268-b030-843b2abeaeb3)
+
+![image](https://github.com/user-attachments/assets/cc35eaf9-a62b-4a82-82c9-5a2f2cfe6dc9)
