@@ -243,3 +243,34 @@ Angular takes two approaches to build the forms. One is <b>Template-driven</b> f
 
 ![image](https://github.com/user-attachments/assets/74fbbfca-c9cf-4026-9d2e-798bb7bee051)
 
+![image](https://github.com/user-attachments/assets/cbfc9807-493c-406c-8705-75bc861a3d49)
+
+this code will give error since ngModel inside a form is not valid without a name tag.
+<p>so name attribute is binded generally to objects fields which is binded to ngModel</p>
+
+![image](https://github.com/user-attachments/assets/5c8334b0-baee-42f8-bb27-04408a0019f5)
+
+![image](https://github.com/user-attachments/assets/df116ac1-9d55-4c88-b3fd-f6448b08ae50)
+
+ now using a method called in html submit this
+
+<h5>ngForm</h5>
+<p>Once, we have a form with few form elements, the angular automatically converts it into a Template-driven form. This is done by the ngForm directive.
+
+The ngForm directive is what makes the Angular template-driven forms work. But we do not need to do anything explicitly.
+
+When we include FormsModule, the Angular is going to look out for any <form> tag in our HTML template. The ngForm directive automatically detects the <form> tag and automatically binds to it. You do not have to do anything on your part to invoke and bind the ngForm directive.</p>
+
+![image](https://github.com/user-attachments/assets/bf6a566c-c8cc-4e11-abb7-dc73278eac1c)
+
+![image](https://github.com/user-attachments/assets/5a8644bc-7be3-422d-b29e-3241762c4b12)
+
+![image](https://github.com/user-attachments/assets/cc5261cf-3beb-4377-a240-4fd214e17f09)
+
+<h5>validation in templte driven form</h5>
+
+![image](https://github.com/user-attachments/assets/52686a75-c291-4971-89bd-dcaf2371c665)
+
+![image](https://github.com/user-attachments/assets/14b67996-7ddb-432b-bc79-a9ed50794c7d)
+
+![image](https://github.com/user-attachments/assets/5954687d-b3f9-4a8b-8796-87bd23cd9d7b)
