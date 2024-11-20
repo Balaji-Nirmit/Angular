@@ -229,3 +229,17 @@ ng g p pipename  or ng generate pipe pipename
 <p>pipes has transform function</p>
 
 ![image](https://github.com/user-attachments/assets/ca31266c-e0ee-4611-a7bf-14f361506785)
+
+
+<h1>angular forms</h1>
+<p>The Angular Forms module provides all the above services out of the box. It binds the form field to the Angular component class. It tracks changes made to the form fields so that we can respond accordingly. It also provides the built-in validators to validate the inputs. You can create your custom validator. It presents the validation errors to the user. Finally, it encapsulates all the input fields into an object structure when the user submits the form.
+
+Angular takes two approaches to build the forms. One is <b>Template-driven</b> forms approach and another one is <b>Reactive forms</b> or model-driven forms approach</p>
+
+<h2>Template driven form</h2>
+<p>First, we build a simple HTML form using a few form elements. Then use the ngForm directive to convert them to Template-driven Form, which creates the top-level FormGroup control. Next, we use the ngModel directive to create the FormControl instance for each of the HTML form elements.</p>
+
+<p>In Template Driven Forms we specify behaviors/validations using directives and attributes in our template and let it work behind the scenes. All things happen in Templates hence very little code is required in the component class. This is different from the reactive forms, where we define the logic and controls in the component class.</p>
+
+![image](https://github.com/user-attachments/assets/74fbbfca-c9cf-4026-9d2e-798bb7bee051)
+
