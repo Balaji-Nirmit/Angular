@@ -763,3 +763,16 @@ GET, POST, PUT, DELETE
 ![image](https://github.com/user-attachments/assets/af696206-6fe6-43ed-8d0c-66ffde88e5e9)
 
 but this is deprecated and will learn he new way in obesrvables.
+
+<h2>POST request</h2>
+
+![image](https://github.com/user-attachments/assets/94bb606a-56df-424a-9263-18d8ef5d940e)
+
+![image](https://github.com/user-attachments/assets/3c8437e8-ac86-463f-bb93-5226674c8bed)
+
+
+<h2>PUT and DELETE request</h2>
+
+When we update a form we need to patch it and then update it.
+
+![image](https://github.com/user-attachments/assets/fa8aa0f5-893a-4533-9bfc-7edb6cc9285e)
