@@ -737,3 +737,29 @@ You can pass into mask pattern with `||`.
 ```html
 <input mask="0000" (maskFilled)="maskFilled()" />
 ```
+
+
+<h1>GET API using HttpClient</h1>
+
+<p>The HttpClient is a separate model in Angular and is available under the @angular/common/http package. The following steps show you how to use the HttpClient in an Angular app.</p>
+
+![image](https://github.com/user-attachments/assets/398cb2d0-42ad-418c-9af8-d4c8a594f75f)
+
+![image](https://github.com/user-attachments/assets/1f55de6b-328b-4416-a932-09b20b5335fa)
+
+In app.config.ts we need to provide httpclient in providers array
+<b>provideHttpClient()</b>
+
+<p>after this import in any component required and dependency injection</p>
+
+httpClient has 4 methods 
+GET, POST, PUT, DELETE
+
+<h2>GET request</h2>
+<p>To make HTTP Get request, we need to make use of the HttpClientModule, which is part of the package @angular/common/http. Open the app.module.ts and import it. Also, import the FormsModule</p>
+
+![image](https://github.com/user-attachments/assets/8f28f65c-9991-4f3d-a9c9-06b11c9e4db9)
+
+![image](https://github.com/user-attachments/assets/af696206-6fe6-43ed-8d0c-66ffde88e5e9)
+
+but this is deprecated and will learn he new way in obesrvables.
