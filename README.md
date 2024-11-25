@@ -802,3 +802,35 @@ there are two ways for injecting services into component
 ![image](https://github.com/user-attachments/assets/4f2791ac-c88c-4a1a-bf98-12ed95ebe7d4)
 
 in constructor it is called dpendency injection
+
+
+<h1>Input and Output Decorators</h1>
+<p>Input decorator marks the property as the input property. I.e it can receive data from the parent component. The parent component uses the property binding to bind it to a component property. Whenever the value in the parent component changes angular updates the value in the child component.</p>
+
+![image](https://github.com/user-attachments/assets/0a124a04-e454-4e34-940a-ccb38de4e608)
+
+<p>The parent component supplies the customer object using the property binding syntax. We add a square bracket around the customer property. Assign template expression (selectedCustomer) to it, which is a property in the parent component.</p>
+
+![image](https://github.com/user-attachments/assets/79792fec-43e0-4b47-9990-3425143ac143)
+
+<p>Output decorates the property as the output property. We initialize it as an EventEmitter. The child component raises the event and passes the data as the argument to the event. The parent component listens to events using event binding and reads the data.</p>
+
+![image](https://github.com/user-attachments/assets/6e7e171d-fd73-4914-86fe-d8a235a8929e)
+
+![image](https://github.com/user-attachments/assets/6c7c489b-bc42-4337-84ec-bdeb07326477)
+
+![image](https://github.com/user-attachments/assets/94efdf0b-acac-4356-9cd7-762d12f545c9)
+
+easy way:-
+<p>in child component</p>
+
+![image](https://github.com/user-attachments/assets/bc4df662-96ca-450a-83ac-99b33895b070)
+
+![image](https://github.com/user-attachments/assets/b9f625c5-1523-4615-a634-da987e63b049)
+
+
+<p>in parent component </p>
+
+![image](https://github.com/user-attachments/assets/efb5fb3f-2186-440f-b2c7-8c01d5aa5d61)
+
+the method getData is in parent component which will receive the data from child
