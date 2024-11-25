@@ -776,3 +776,29 @@ but this is deprecated and will learn he new way in obesrvables.
 When we update a form we need to patch it and then update it.
 
 ![image](https://github.com/user-attachments/assets/fa8aa0f5-893a-4533-9bfc-7edb6cc9285e)
+
+
+<h1>Services</h1>
+<p>Service is a piece of reusable code with a focused purpose. A code that you will use in many components across your application
+
+Our components need to access the data. You can write data access code in each component, but that is very inefficient and breaks the rule of single responsibility. The Component must focus on presenting data to the user. The task of getting data from the back-end server must be delegated to some other class. We call such a class a Service class. Because it provides the service of providing data to every component that needs it.</p>
+
+![image](https://github.com/user-attachments/assets/c0e09c18-0c4b-476f-b530-bd05a807c839)
+
+<strong>ng g s service_name</strong>
+<strong>ng generate service service_name</strong>
+
+
+![image](https://github.com/user-attachments/assets/5e870e23-579e-42b3-be93-bf22decd81ec)
+
+it has injectable decorator
+
+![image](https://github.com/user-attachments/assets/8da41e28-7032-4df2-991c-58a83e7b32bd)
+
+there are two ways for injecting services into component 
+
+<ul><li>using inject</li><li>dependency injection</li></ul>
+
+![image](https://github.com/user-attachments/assets/4f2791ac-c88c-4a1a-bf98-12ed95ebe7d4)
+
+in constructor it is called dpendency injection
