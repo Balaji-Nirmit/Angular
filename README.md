@@ -942,3 +942,57 @@ The `ngOnDestroy` lifecycle hook is called when Angular is about to destroy the 
 | `ngOnDestroy`             | When component is about to be destroyed                     | -                       | -                      |
 
 These hooks help manage the lifecycle of an Angular component, from initialization to destruction, providing opportunities for you to insert custom logic at each stage.
+
+
+### Ng-Template and TemplateRef
+
+<p>The <ng-template> is an Angular element, which contains the template. A template is an HTML snippet. The template does not render itself on DOM.</p>
+
+![image](https://github.com/user-attachments/assets/175a4fad-dee7-48a0-bbc2-b8b8bf6a1d79)
+
+![image](https://github.com/user-attachments/assets/4fefd88b-2fd0-4e3f-9a47-6c77ce4538ad)
+
+![image](https://github.com/user-attachments/assets/d994e668-e40d-45c2-89b3-de1fed200de9)
+
+![image](https://github.com/user-attachments/assets/067e032e-d2a7-40e1-85f3-d1621853c9f3)
+
+<h2>ngTemplateOutlet</h2>
+<p>The ngTemplateOutlet, is a structural directive, which renders the template.
+
+To use this directive, first, we need to create the template and assign it to a template reference variable (sayHelloTemplate in the following template).</p>
+
+![image](https://github.com/user-attachments/assets/3673adda-27a9-480c-bfff-e305d2ca1e38)
+
+<p>We use the ngTemplateOutlet in the DOM, where we want to render the template.</p>
+<p>The following code assigns the Template variable sayHelloTemplate to the ngTemplateOutlet directive using the Property Binding.</p>
+
+![image](https://github.com/user-attachments/assets/1a3df7d0-d78e-47c2-9104-a5b75e69d591)
+
+<p>The content inside the ngTemplateOutlet directive is not displayed. It replaces it with content it gets from the sayHelloTemplate.
+
+The ngTemplateOutlet is a very powerful directive. You can use it render templates, pass data to the template, pass the template to child components, etc.</p>
+
+<h2>TemplateRef & ViewContainerRef</h2>
+
+<p>TemplateRef is a class and the way to reference the ng-template in the component or directive class. Using the TemplateRef we can manipulate the template from component code.
+
+Remember ng-template is a bunch of HTML tags enclosed in a HTML element <ng-template></p>
+
+![image](https://github.com/user-attachments/assets/cfa35f88-f59c-4e5c-9d33-43c1eeaeb0a2)
+
+<p>To access the above ng-template in the component or directive, first, we need to assign a template reference variable. #sayHelloTemplate is that variable in the code below.</p>
+
+![image](https://github.com/user-attachments/assets/b456f650-e0cd-4890-8b2b-7ba8a47a6bae)
+
+<p>Now, we can use the ViewChild query to inject the sayHelloTemplate into our component as an instance of the class TemplateRef.</p>
+
+![image](https://github.com/user-attachments/assets/6d2414a4-a4f1-476a-9f61-438fb86b99fd)
+
+Now, we need to tell Angular where to render it. The way to do is to use the ViewContainerRef.
+
+![image](https://github.com/user-attachments/assets/fa738099-bd92-4be8-8932-0f30be45e771)
+
+![image](https://github.com/user-attachments/assets/b5984798-9c0d-45b5-8665-2970ced1f233)
+
+![image](https://github.com/user-attachments/assets/250896ef-4e78-4db3-860b-2170ae3078a6)
+
