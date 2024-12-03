@@ -834,3 +834,111 @@ easy way:-
 ![image](https://github.com/user-attachments/assets/efb5fb3f-2186-440f-b2c7-8c01d5aa5d61)
 
 the method getData is in parent component which will receive the data from child
+
+
+<h1>Life Cycle Hooks</h1>
+
+<p>Lifecycle hooks are Angular methods that are executed at certain points during a component's lifecycle. These methods allow you to tap into the Angular component lifecycle and apply custom logic or operations at specified points in time.</p>
+
+![image](https://github.com/user-attachments/assets/52a089b6-582c-4df7-8f04-def79fb0b23b)
+
+very first the constructor is called
+
+# Angular Lifecycle Hooks
+
+Angular provides several lifecycle hooks that allow you to run custom logic at different stages of a component's life cycle. Below are the key lifecycle hooks in Angular:
+
+## `ngOnChanges`
+
+The `ngOnChanges` lifecycle hook is invoked whenever there are changes in the input properties of a component. It is called before `ngOnInit` and responds when data-bound input properties are set or reset. This method receives a `SimpleChanges` object containing the previous and current values of the input properties.
+
+- **Triggered when**: Data-bound input properties change.
+- **Use case**: To respond to changes in input properties.
+- **Invoked before**: `ngOnInit`.
+
+---
+
+## `ngOnInit`
+
+The `ngOnInit` lifecycle hook is invoked once the component is initialized, after Angular has set the input properties. It is invoked after `ngOnChanges` and is used for component initialization logic.
+
+- **Triggered when**: Component is initialized.
+- **Use case**: Initialize data or perform setup logic for the component.
+- **Invoked after**: `ngOnChanges` (if input properties exist).
+
+---
+
+## `ngDoCheck`
+
+The `ngDoCheck` lifecycle hook is invoked during every change detection cycle. It allows you to detect and act upon changes that Angular may not automatically detect.
+
+- **Triggered when**: During every change detection cycle, even without input property changes.
+- **Use case**: To implement custom change detection logic.
+- **Invoked after**: `ngOnChanges` and `ngOnInit`.
+
+---
+
+## `ngAfterContentInit`
+
+The `ngAfterContentInit` lifecycle hook is called once after Angular has fully initialized the content projected into the component (via `ng-content`). This hook is invoked only once.
+
+- **Triggered when**: Content has been projected into the component's view.
+- **Use case**: Initialize or process projected content.
+- **Invoked after**: `ngDoCheck` and before `ngAfterContentChecked`.
+
+---
+
+## `ngAfterContentChecked`
+
+The `ngAfterContentChecked` lifecycle hook is invoked after the content projection has been checked for changes. This hook runs after every change detection cycle.
+
+- **Triggered when**: The projected content is checked for changes.
+- **Use case**: Respond to changes in projected content.
+- **Invoked after**: `ngDoCheck`, `ngAfterContentInit`, and every change detection cycle.
+
+---
+
+## `ngAfterViewInit`
+
+The `ngAfterViewInit` lifecycle hook is called once after the view and its child views have been initialized. It is invoked only once in the component lifecycle.
+
+- **Triggered when**: The component’s view and child views are initialized.
+- **Use case**: To initialize or access the component’s view and child components.
+- **Invoked after**: `ngAfterContentChecked`.
+
+---
+
+## `ngAfterViewChecked`
+
+The `ngAfterViewChecked` lifecycle hook is invoked after Angular checks the view and child views of the component for changes. It is called after every change detection cycle.
+
+- **Triggered when**: The component’s view and child views are checked for changes.
+- **Use case**: Respond to changes in the view.
+- **Invoked after**: `ngAfterViewInit` and after each change detection cycle.
+
+---
+
+## `ngOnDestroy`
+
+The `ngOnDestroy` lifecycle hook is called when Angular is about to destroy the component. This is a good place to clean up resources like unsubscribing from observables or removing event listeners to avoid memory leaks.
+
+- **Triggered when**: The component is destroyed.
+- **Use case**: Clean up resources like subscriptions, event listeners, or custom cleanup logic.
+- **Invoked before**: Component is removed from the DOM.
+
+---
+
+### Summary
+
+| Lifecycle Hook           | Triggered When                                              | Invoked Before          | Invoked After          |
+|--------------------------|-------------------------------------------------------------|-------------------------|------------------------|
+| `ngOnChanges`             | When input properties change                               | -                       | `ngOnInit`             |
+| `ngOnInit`                | After component initialization and input properties are set | `ngOnChanges`           | `ngDoCheck`            |
+| `ngDoCheck`               | During every change detection cycle                         | `ngOnInit`              | `ngAfterContentInit`   |
+| `ngAfterContentInit`      | After content is projected into the component               | `ngDoCheck`             | `ngAfterContentChecked`|
+| `ngAfterContentChecked`   | After content checking completes                            | `ngAfterContentInit`    | `ngAfterViewInit`      |
+| `ngAfterViewInit`         | After view and child views are initialized                  | `ngAfterContentChecked` | `ngAfterViewChecked`   |
+| `ngAfterViewChecked`      | After view and child views are checked                      | `ngAfterViewInit`       | -                      |
+| `ngOnDestroy`             | When component is about to be destroyed                     | -                       | -                      |
+
+These hooks help manage the lifecycle of an Angular component, from initialization to destruction, providing opportunities for you to insert custom logic at each stage.
