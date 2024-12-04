@@ -996,3 +996,10 @@ Now, we need to tell Angular where to render it. The way to do is to use the Vie
 
 ![image](https://github.com/user-attachments/assets/250896ef-4e78-4db3-860b-2170ae3078a6)
 
+
+
+<h1>ng-container</h1>
+
+<p>ng-container allows us to create a division or section in a template without introducing a new HTML element. The ng-container does not render in the DOM, but content inside it is rendered. ng-container is not a directive, component, class, or interface, but just a syntax element.</p>
+
+limitation of structural directive is that one element can't have more than one structural directive.
