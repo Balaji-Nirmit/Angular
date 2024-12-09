@@ -1003,3 +1003,32 @@ Now, we need to tell Angular where to render it. The way to do is to use the Vie
 <p>ng-container allows us to create a division or section in a template without introducing a new HTML element. The ng-container does not render in the DOM, but content inside it is rendered. ng-container is not a directive, component, class, or interface, but just a syntax element.</p>
 
 limitation of structural directive is that one element can't have more than one structural directive.
+
+
+
+<h1>View Child</h1>
+
+The ViewChild query returns the first matching element from the DOM and updates the component variable on which we apply it.
+
+![image](https://github.com/user-attachments/assets/76a6074a-ff96-4629-b9a1-40360dc7f4f3)
+
+viewchild is a decorator
+
+![image](https://github.com/user-attachments/assets/add43579-0cb5-487c-91f7-9b90257643d2)
+
+we mostly use afterViewInit for viewchilds
+
+![image](https://github.com/user-attachments/assets/85d9d893-e94e-4a7f-93f5-dbabc9a1e03e)
+
+we can also create a reference of a reusable component
+
+![image](https://github.com/user-attachments/assets/f3f8c860-759e-4965-9657-09c814978864)
+
+ ![image](https://github.com/user-attachments/assets/cdf4d254-0259-4b32-abdd-5334293e49cd)
+
+it is needed to call the reusable component in html also otherwise undefined response will come. 
+
+![image](https://github.com/user-attachments/assets/afb3eb45-8e25-4118-818a-78e890c1547b)
+
+so whenever using external libraries like of graphs, etc use viewchild.
+
