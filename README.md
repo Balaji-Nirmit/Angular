@@ -1053,3 +1053,34 @@ there are
 </ul>
 
 ![image](https://github.com/user-attachments/assets/2588c453-3188-4202-a2ec-65515753fac9)
+
+
+# ROUTE gaurds
+
+<p>We use the Angular Guards to control whether users can navigate to or away from the current route.</p>
+<p>One of the common scenarios where we use Route guards is authentication. We want our app to stop the unauthorized user from accessing the protected route. We achieve this by using the CanActivate guard, which angular invokes when the user tries to navigate into the protected route. Then we hook into the CanActivate guard and use the authentication service to check whether the user is authorized to use the route or not. If he is not authenticated, then we can redirect the user to the login page.</p>
+
+![image](https://github.com/user-attachments/assets/bad592af-0a6e-4042-befa-c67a30ab5bfd)
+
+
+## CanActivate
+The Angular CanActivate guard decides if a route can be activated ( or the component gets rendered). We use this guard when we want to check on some condition, before activating the component or showing it to the user. This allows us to cancel the navigation.
+
+Use cases
+<li>Checking if a user has logged in</li>
+<li>Checking if a user has permission</li>
+One of the use cases of this guard is to check if the user has logged in to the system. If the user has not logged in, then the guard can redirect him to the login page.
+
+## CanDeactivate
+This Angular Guard decides if the user can leave the component (navigate away from the current route). This route is useful when the user might have some pending changes, which is not yet saved. The CanDeactivate route allows us to ask for user confirmation before leaving the component.  You might ask the user if it’s OK to discard pending changes rather than save them.
+
+## Resolve
+This guard delays the activation of the route until some tasks are complete. You can use the guard to pre-fetch the data from the backend API before activating the route.
+
+## CanLoad
+The CanLoad Guard prevents the loading of the Lazy Loaded Module. We generally use this guard when we do not want to unauthorized users to be able even to see the source code of the module.
+
+This guard works similarly to CanActivate guard with one difference. The CanActivate guard prevents a particular route from being accessed. The CanLoad prevents the entire lazy-loaded module from being downloaded, protecting all the routes within that module.
+
+## CanActivateChild
+CanActivateChild guard determines whether a child route can be activated. This guard is very similar to CanActivateGuard. We apply this guard to the parent route. The Angular invokes this guard whenever the user tries to navigate to any of its child routes. This allows us to check some conditions and decide whether to proceed with the navigation or cancel it.
