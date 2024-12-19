@@ -1032,3 +1032,24 @@ it is needed to call the reusable component in html also otherwise undefined res
 
 so whenever using external libraries like of graphs, etc use viewchild.
 
+
+# decorators
+
+<p>An Angular Decorator is a function, using which we attach metadata to a class declaration, method, accessor, property, or parameter.
+
+We apply the decorator using the form @expression, where expression is the name of the decorator.</p>
+<p>The decorator is a Typescript feature and it is still not part of the Javascript. It is still in the Proposal stage.</p>
+
+<p>Angular uses the Decorators to Provide metadata to the class, method, or property.
+
+For example, the AppComponent must know where to find its template. We do that by using the templateUrl parameter of the @Component directive. The @Component decorator also accepts the values for styleUrls, encapsulation, changeDetection, etc, which Angular uses to configure the component.</p>
+
+there are
+<ul>
+  <li>class decorator</li>
+  <li>property decorator</li>
+  <li>method decorator</li>
+  <li>parameter decorator</li>
+</ul>
+
+![image](https://github.com/user-attachments/assets/2588c453-3188-4202-a2ec-65515753fac9)
