@@ -1084,3 +1084,26 @@ This guard works similarly to CanActivate guard with one difference. The CanActi
 
 ## CanActivateChild
 CanActivateChild guard determines whether a child route can be activated. This guard is very similar to CanActivateGuard. We apply this guard to the parent route. The Angular invokes this guard whenever the user tries to navigate to any of its child routes. This allows us to check some conditions and decide whether to proceed with the navigation or cancel it.
+
+
+### steps 
+
+first  ng g g guard_file_name
+ then asked for gaurd:- choose the gaurd
+
+ ![image](https://github.com/user-attachments/assets/08cb7b2a-d5bb-4ec3-b29b-2cd2e7544adc)
+
+![image](https://github.com/user-attachments/assets/25ee418b-e6cc-450a-9aa3-5a1164621c0f)
+
+![image](https://github.com/user-attachments/assets/c993c336-98a7-46f0-a1d8-573a0fb84a6a)
+
+now we need to write the logic for the gaurd function in the gaurd file--
+example:-
+
+![image](https://github.com/user-attachments/assets/72f99473-cbae-4e35-934c-e019027731f3)
+
+# constant file
+
+it is a normal .ts file.
+
+![image](https://github.com/user-attachments/assets/a7189c90-3bd3-48e6-8e44-b066be409fb9)
