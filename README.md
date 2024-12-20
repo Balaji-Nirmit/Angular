@@ -1125,3 +1125,35 @@ In Angular, interfaces are often used to define the structure of data, such as m
 
 ![image](https://github.com/user-attachments/assets/1651c659-b98a-41b4-9b92-8e968f61b895)
 
+# signal
+
+replacement of observable
+<p>In Angular, signals are a reactive mechanism used to handle state and data flow. Signals are a relatively new feature in Angular (introduced in Angular 16) and they provide a way to manage and react to changes in state within an application, similar to reactive programming concepts seen in libraries like RxJS.</p>
+
+<p>Signals are objects that hold values and notify consumers when the value changes. A signal is created by using the signal() function, and its value can be updated, observed, and reacted to directly.</p>
+
+<li>we call signal as a method</li>
+
+![image](https://github.com/user-attachments/assets/2f943716-a0ee-4979-8f2b-226a4ccaa3f9)
+
+![image](https://github.com/user-attachments/assets/f1cdd389-902f-4a1e-85c2-746db1e2099b)
+
+![image](https://github.com/user-attachments/assets/485e8fce-a2c2-47a3-99cb-e983b0736669)
+
+![image](https://github.com/user-attachments/assets/e1fe479b-6dd5-449b-947b-57e29c7c4a12)
+
+here the set method is used to change the value 
+
+<p>how signal is different is that it doesn't need zone.js for change detection</p>
+
+#### computed
+
+<p>The computed() function in Angular provides a way to automatically derive and update values based on other signals, similar to the concept of computed properties in frameworks like Vue.js or Svelte.</p>
+
+![image](https://github.com/user-attachments/assets/a70eb3e9-9564-4fec-b7e4-c081f442edb7)
+
+whenever firstname <b>or</b> lastname changes fullname would be computed.
+
+![image](https://github.com/user-attachments/assets/16900dee-cc53-420b-95c8-8179dab57e0a)
+
+if curly brackets are used then return statement is used.
