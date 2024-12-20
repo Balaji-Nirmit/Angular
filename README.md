@@ -1157,3 +1157,49 @@ whenever firstname <b>or</b> lastname changes fullname would be computed.
 ![image](https://github.com/user-attachments/assets/16900dee-cc53-420b-95c8-8179dab57e0a)
 
 if curly brackets are used then return statement is used.
+
+
+
+# observable using RxJs
+
+## data stream
+
+<p>A data stream is the data that arrives over some time. The stream of data can be anything. Like variables, user inputs, properties, caches, data structures, and even failures, etc
+
+Consider the example of a sequence of x and y positions of mouse click events. Assume that the user has clicked on the locations (12, 15), (10, 12), (15, 20), and (17, 15) in that order.
+The following diagram shows how the values arrive over a period of time. As you can see, the stream emits the values as they happen, i.e., asynchronously.</p>
+
+![image](https://github.com/user-attachments/assets/3bef1e75-8c69-43fc-87bd-7e3aafd121e8)
+
+![image](https://github.com/user-attachments/assets/5634604e-19eb-42fb-afc1-276c946bcce6)
+
+## RxJs
+
+<p>The RxJS (Reactive Extensions Library for JavaScript) is a Javascript library that allows us to work with asynchronous data streams.</p>
+
+![image](https://github.com/user-attachments/assets/a9dda645-7e01-4459-a4f6-f1478a895e8f)
+
+## observable
+
+<p>Observable is a function that converts the ordinary data stream into an observable one. You can think of Observable as a wrapper around the ordinary data stream.
+
+An observable stream or simple Observable emits the value from the stream asynchronously. It emits the complete signals when the stream completes or an error signal if the stream errors out.
+
+Observables are declarative. You define an observable function just like any other variable. The observable starts to emit values only when someone subscribes to it.</p>
+
+<p><strong>Generally we store observable datas in a variable ending with a dollar sign example:- accountNumberData$ </strong></p>
+it is just a standard not necessary but should be followed.
+
+![image](https://github.com/user-attachments/assets/3c9671aa-3e59-4a23-bafd-cb2455c6e6ee)
+
+![image](https://github.com/user-attachments/assets/9e79b0c9-13ad-4021-8258-ebdbf146ea0b)
+
+![image](https://github.com/user-attachments/assets/2faa6614-49ba-4ba2-825b-387b3c27320c)
+
+### RxJS subject
+
+<p>RxJS Subjects are a powerful way to handle and manage streams of data. A Subject is both an Observable and an Observer: it can emit values like an Observable and can also be subscribed to, making it a central part of reactive programming. Subjects are particularly useful in scenarios where you need to multicast data to multiple observers or components.</p>
+
+<p>A Subject is a special kind of Observable that allows values to be multicast to many Observers. Unlike a regular Observable, which can only be subscribed to once, a Subject allows multiple subscribers and pushes the same values to all subscribers.</p>
+
+![image](https://github.com/user-attachments/assets/1499c92e-1048-4194-84ef-d52488c640f7)
