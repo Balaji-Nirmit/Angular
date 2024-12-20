@@ -1203,3 +1203,11 @@ it is just a standard not necessary but should be followed.
 <p>A Subject is a special kind of Observable that allows values to be multicast to many Observers. Unlike a regular Observable, which can only be subscribed to once, a Subject allows multiple subscribers and pushes the same values to all subscribers.</p>
 
 ![image](https://github.com/user-attachments/assets/1499c92e-1048-4194-84ef-d52488c640f7)
+
+ ![image](https://github.com/user-attachments/assets/be8a4624-41c5-49dd-9953-6cdae3a84ae1)
+
+next method to send data
+
+![image](https://github.com/user-attachments/assets/f1ad8c29-a286-48bb-bccf-db7fba1fc768)
+
+subscribe to get 
