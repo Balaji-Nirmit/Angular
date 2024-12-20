@@ -1107,3 +1107,21 @@ example:-
 it is a normal .ts file.
 
 ![image](https://github.com/user-attachments/assets/a7189c90-3bd3-48e6-8e44-b066be409fb9)
+
+
+# class and interface
+
+A class is a blueprint for creating objects, defining the properties and methods that the object can have. In Angular, classes are used for:
+
+<li>Component Classes: Every Angular component is a class that defines the component’s logic, properties, and methods.</li>
+<li>Service Classes: Services in Angular are often implemented as classes and can be injected into components or other services to share logic across the application.</li>
+<li>Directive Classes: Custom directives are also written as classes in Angular.</li>
+<li>Model Classes: Classes can be used to define the data structure (model) for specific types of data that will be used in your app.</li>
+
+
+<p>An interface in TypeScript is a way to define the structure or shape of an object, but unlike classes, it cannot be instantiated. Interfaces define the required properties and methods that an object must have.
+
+In Angular, interfaces are often used to define the structure of data, such as models or responses from an API. They ensure that objects conform to a specific structure, which improves type safety.</p>
+
+![image](https://github.com/user-attachments/assets/1651c659-b98a-41b4-9b92-8e968f61b895)
+
