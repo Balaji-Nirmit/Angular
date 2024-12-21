@@ -1,4 +1,4 @@
-# Angular
+![image](https://github.com/user-attachments/assets/953b2e84-2eb8-4da4-b99b-1ca6992ff8f1)# Angular
 <p>install angular CLI -- npm install -g @angular/cli</p>
 <p>this installs globally</p>
 
@@ -1275,3 +1275,48 @@ behaviorSubject.next(3);  // Both Subscriber 1 and Subscriber 2 will receive 3
 ```
 
 behavious subject tracks who the receivers are and who have received the data;
+
+
+# change detection
+<p>change detection refers to the mechanism used to track changes in the application's data model and reflect those changes in the user interface. In Angular 19 (or the latest versions of Angular), change detection continues to play a critical role in ensuring that the views are updated when the underlying model changes.</p>
+
+![image](https://github.com/user-attachments/assets/e115db37-a3d0-42c4-bbbc-b6bee1cfea99)
+
+```typescript
+import { Component, ChangeDetectionStrategy } from '@angular/core';
+
+@Component({
+  selector: 'app-example',
+  templateUrl: './example.component.html',
+  changeDetection: ChangeDetectionStrategy.OnPush
+})
+export class ExampleComponent {
+  @Input() data: any;
+}
+```
+
+![image](https://github.com/user-attachments/assets/00592695-950e-4df3-ba4f-62239f80a025)
+
+```typescript
+import { Component, ChangeDetectorRef } from '@angular/core';
+
+@Component({
+  selector: 'app-manual-detection',
+  templateUrl: './manual-detection.component.html',
+})
+export class ManualDetectionComponent {
+  constructor(private cdRef: ChangeDetectorRef) {}
+
+  triggerChangeDetection() {
+    this.cdRef.detectChanges();
+  }
+
+  markForCheck() {
+    this.cdRef.markForCheck();
+  }
+}
+```
+<p>Angular uses Zone.js, a library that intercepts asynchronous operations (like setTimeout, Promises, etc.) and triggers change detection when such operations complete. However, in some cases, when interacting with external libraries or doing manual asynchronous operations, you may need to manually trigger change detection.</p>
+
+![image](https://github.com/user-attachments/assets/f4c483a4-27ec-44bc-bca7-29afe415e66e)
+
