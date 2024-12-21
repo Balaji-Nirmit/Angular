@@ -1211,3 +1211,37 @@ next method to send data
 ![image](https://github.com/user-attachments/assets/f1ad8c29-a286-48bb-bccf-db7fba1fc768)
 
 subscribe to get 
+
+
+![image](https://github.com/user-attachments/assets/c992e006-dfa6-4b54-8d03-968b76709b3a)
+
+![image](https://github.com/user-attachments/assets/abddb9d1-62bf-494a-b933-7e21aab2dd50)
+
+![image](https://github.com/user-attachments/assets/3fa9bfed-b935-4534-b355-9840c48db8ea)
+
+![image](https://github.com/user-attachments/assets/2740b13d-4486-4db3-b8d0-f92430e7bf19)
+
+```typescript
+import { Observable } from 'rxjs';
+
+const observable = new Observable<string>((observer) => {
+  observer.next('Hello');
+  observer.next('World');
+  observer.complete();  // Mark the observable as complete
+});
+
+observable.subscribe({
+  next: (value) => console.log(value),  // Handle emitted values
+  complete: () => console.log('Completed!')  // Handle completion
+});
+```
+
+![image](https://github.com/user-attachments/assets/0a2785e5-5a1b-4e0c-afb0-46972ae65893)
+
+```typescript
+const observer = {
+  next: (value: string) => console.log(`Received: ${value}`),
+  error: (err: any) => console.log(`Error: ${err}`),
+  complete: () => console.log('Stream completed')
+};
+```
