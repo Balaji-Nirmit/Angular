@@ -1327,3 +1327,8 @@ export class ManualDetectionComponent {
 # project architecture
 
 ![image](https://github.com/user-attachments/assets/625dacda-5306-4949-917c-70c7fd7af393)
+
+
+to add environments ng g environments
+
+![image](https://github.com/user-attachments/assets/083b9bf5-0567-4774-a788-1d8c2a5fca0d)
