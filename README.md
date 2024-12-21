@@ -1273,3 +1273,5 @@ behaviorSubject.subscribe((value) => {
 // Emit more values
 behaviorSubject.next(3);  // Both Subscriber 1 and Subscriber 2 will receive 3
 ```
+
+behavious subject tracks who the receivers are and who have received the data;
