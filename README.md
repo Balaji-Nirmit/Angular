@@ -1250,3 +1250,26 @@ const observer = {
 
 ![image](https://github.com/user-attachments/assets/b0f02616-c444-40a0-a863-36145d1f34a9)
 
+```typescript
+import { BehaviorSubject } from 'rxjs';
+
+// Create a BehaviorSubject with an initial value of 0
+const behaviorSubject = new BehaviorSubject<number>(0);
+
+// Subscriber 1
+behaviorSubject.subscribe((value) => {
+  console.log('Subscriber 1:', value);  // Will receive the most recent value (or initial value)
+});
+
+// Emit values
+behaviorSubject.next(1);  // Subscriber 1 will receive 1
+behaviorSubject.next(2);  // Subscriber 1 will receive 2
+
+// Subscriber 2 (subscribes after some values were emitted)
+behaviorSubject.subscribe((value) => {
+  console.log('Subscriber 2:', value);  // Will receive the latest value (i.e., 2)
+});
+
+// Emit more values
+behaviorSubject.next(3);  // Both Subscriber 1 and Subscriber 2 will receive 3
+```
