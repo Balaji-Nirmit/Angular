@@ -1323,3 +1323,7 @@ export class ManualDetectionComponent {
 ![image](https://github.com/user-attachments/assets/d98b5111-4ea4-4075-93e9-88d62ed9dc38)
 
 <p>both part of the change detection system, specifically used for comparing data structures that are iterable (like arrays) or objects. These differ types help Angular to efficiently detect changes in such data structures and update the DOM accordingly.</p>
+
+# project architecture
+
+![image](https://github.com/user-attachments/assets/625dacda-5306-4949-917c-70c7fd7af393)
