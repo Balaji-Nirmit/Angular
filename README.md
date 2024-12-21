@@ -1245,3 +1245,8 @@ const observer = {
   complete: () => console.log('Stream completed')
 };
 ```
+
+![image](https://github.com/user-attachments/assets/33a0799e-958c-425d-8a14-9dd40c926c9c)
+
+![image](https://github.com/user-attachments/assets/b0f02616-c444-40a0-a863-36145d1f34a9)
+
